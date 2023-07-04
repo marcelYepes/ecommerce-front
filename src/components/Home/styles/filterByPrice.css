@@ -1,0 +1,76 @@
+.filter__container {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  column-gap: 1em;
+  user-select: none;
+}
+.selector__filter {
+  cursor: pointer;
+  display: flex;
+  gap: 4em;
+  align-items: center;
+}
+.filter__title {
+  opacity: 0.9;
+}
+.btn-category-down {
+  font-size: 1.5em;
+  font-weight: 600;
+  transition: transform 1s ease;
+}
+
+.btn-category-down.bx-chevron-up {
+  transform: rotate(360deg);
+}
+.form__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: absolute;
+}
+.filter-btn {
+  background: #f85555;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  margin: 1em 0.3em 1.2em auto;
+  padding: 8px 15px;
+  position: relative;
+  left: -30px;
+}
+.filter-btn:hover {
+  filter: brightness(1.2);
+}
+.from__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
+  margin: 0.3em 2em;
+}
+.input__from {
+  margin-top: 0.3em;
+  border: 1px solid #ccca;
+  width: 8em;
+  height: 2em;
+}
+.input__from:focus {
+  outline: none;
+}
+.to__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1em;
+  margin: 0.3em 1.3em;
+}
+.input__to {
+  border: 1px solid #ccca;
+  width: 8em;
+  margin-top: 0.2em;
+  height: 2em;
+}
+.input__to:focus {
+  outline: none;
+}

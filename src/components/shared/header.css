@@ -1,0 +1,38 @@
+.body {
+  margin: 0;
+}
+.header__container {
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  padding: 0.5em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  width: 100%;
+  background-color: white;
+}
+
+.header__logo {
+  min-width: 100px;
+}
+.header__list {
+  padding: 0.5em;
+  display: flex;
+  gap: 2em;
+}
+.header__items i {
+  color: #999;
+}
+.header__item-link {
+  color: #999;
+  font-size: 20px;
+  text-decoration: none;
+}
+.bx-btn {
+  padding-top: 0.2em;
+}
+.header__item-link:hover {
+  text-decoration: underline;
+}
