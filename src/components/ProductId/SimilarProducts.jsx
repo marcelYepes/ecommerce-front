@@ -1,10 +1,13 @@
 import React, {useEffect} from "react"
 import useFetch from "../../hooks/useFetch"
 import CardProduct from "../Home/CardProduct"
-import './styles/similarProducts.css'
+import "./styles/similarProducts.css"
 
 const SimilarProducts = ({product}) => {
-  const url = `https://e-commerce-api-v2.academlo.tech/api/v1/products?categoryId=${product?.categoryId}`
+  const URL_BASE = import.meta.env.VITE_REACT_APP_URL
+
+  const url = `${URL_BASE}/products?categoryId=${product?.categoryId}`
+
   const [filterProducts, getProductByCategory] = useFetch(url)
 
   useEffect(() => {
